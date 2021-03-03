@@ -1,42 +1,486 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+<html lang="en">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Sawyer Gobin | Personal Site</title>
+    <meta content="Sawyer Gobin's Personal Portfolio Site. I'm a Kansas City based web developer trained in the .Net Stack, MVC, and ReactJS" name="description">
+    <meta content="Web Developer, Kansas City, Sawyer Gobin, front-end, back-end, middle-tier, freelance, Programmer, Coding, .Net, MVC, ReactJS, Resume, Portfolio" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/Content/assets/img/favicon.png" rel="icon">
+    <link href="~/Content/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/Content/assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/Content/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Personal - v2.5.1
+    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-tops">
+        <div class="container landing-text">
+
+            <h1><a href="index.html">Sawyer Gobin</a></h1>
+            <!-- Uncomment below if using an image logo -->
+            <!-- <a href="index.html" class="mr-auto"><img src="~/Content/assets/img/logo.png" alt="" class="img-fluid"></a> -->
+            <h2>Full-Stack <span>Web Developer</span> in Kansas City</h2>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sawyer-gobin/" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a>
+                <a href="https://github.com/sawyergobin" target="_blank" class="github"><i class="icofont-github"></i></a>
+                <a href="https://twitter.com/GobinSawyer" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
+            </div>
+
+        </div>
+    </header><!-- End Header -->
+
+    @RenderBody()
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Resume</h2>
+                <p>My Resume</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Sumary</h3>
+                    <div class="resume-item pb-0">
+                        <h4>SAWYER GOBIN</h4>
+                        <p><em>Creative and focused full-stack developer ready to take any project from inception all the way to the end user.</em></p>
+                        <p>
+                            <ul>
+                                <li>Kansas City, Missouri</li>
+                                <li>Download Resume:<a href="~/Content/assets/downloadable/SawyerGobinResumeIT.pdf"> MyResume(PDF)</a></li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>Full Stack Web Development Program</h4>
+                        <h5>Anticipated Graduation: May 2021</h5>
+                        <p><em>Centriq Training, Kansas City, MO</em></p>
+                        <p>
+                            Attended full-time, immersive coding program to learn front-end, middle-tier, and back-end technologies and methodologies used in web application development.
+                            <ul>
+                                <li>MVC Framework </li>
+                                <li>Website Deployment</li>
+                                <li>Pair Programming </li>
+                                <li>Source Control Utilization</li>
+                                <li>Code Review</li>
+                                <li>Agile/Scrum Methodology</li>
+                            </ul>
+                            <br/>
+                            <strong>Full Details in my <a href="~/Content/assets/downloadable/SawyerGobinResumeIT.pdf">Resume PDF</a> or <a href="~/Content/assets/downloadable/SawyerGobinResumeIT.pdf">LinkedIn</a>.</strong>
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Instrumental Music Education</h4>
+                        <h5>2014 - 2016</h5>
+                        <p><em>UMKC Conservatory, Kansas City, MO</em></p>
+                        <p>Attended on full-ride Chancellor's Scholarship awarded by academic merit</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Supervisor: Abuelo's Restaurant</h4>
+                        <h5>2019 - 2020</h5>
+                        <p><em>Kansas City, Missouri</em></p>
+                        <p>
+                            <ul>
+                                <li><strong>Awarded:</strong> Employee of the Year: 2019</li>
+                                <li>Acquired expertise in troubleshooting Point-Of-Sale system and oversaw upkeep of hardware and software of POS system.</li>
+                                <li>Educated 5+ new employees per month on the use of POS systems.</li>
+                                <li>Rewrote training curriculum to create more updated and effective training resources.</li>
+                                <li>Organized and mobilized a team of 25+ employees daily.</li>
+                                <li>Ensured all parties were empowered to perform their jobs and communicate effectively.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Manager: The Melting Pot</h4>
+                        <h5>2017-2019</h5>
+                        <p><em>Kansas City, Missouri</em></p>
+                        <p>
+                            <ul>
+                                <li><strong>Awarded:</strong> Rookie of the Year: 2017</li>
+                                <li>Oversaw all restaurant operations, employees, scheduling, guest satisfaction, and light maintenance.</li>
+                                <li>Revamped training curriculum and oversaw all new employee training procedures</li>
+                                <li>Facilitated a 20% rise in Average Guest Service Index over 6 months.</li>
+                                <li>Managment team was awarded the 2018 Best Teamwork award out of 70+ competing teams from across the country</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Resume Section -->
+    <!-- ======= Links Section (Legacy: Services Section) ======= -->
+    <section id="links" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Links</h2>
+                <p>My Network</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                        </div>
+                        <br />
+                        <h4><a href="https://www.centriq.com/career/it-career-program/what-you-learn/">Centriq Training</a></h4>
+                        <p>Full Stack Development Training Program. Centriq is the largest, hands-on IT career trainer in the Midwest</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/SarahLink.jpg" />
+                        </div>
+                        <br />
+                        <h4><a href="https://www.sarahledford.com">Sarah Ledford</a></h4>
+                        <p>Centriq Classmate</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/JordanLink.jpg" />
+                        </div>
+                        <br />
+                        <h4><a href="https://www.jordanhickman.com">Jordan Hickman</a></h4>
+                        <p>Centriq Classmate</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/WesLink.jpg" />
+                        </div>
+                        <br />
+                        <h4><a href="https://www.codebywes.com">Wes Nelson</a></h4>
+                        <p>Centriq Classmate</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/JesseLink.jpg" />
+                        </div>
+                        <br />
+                        <h4><a href="https://www.instagram.com/jessekblack/?hl=en" target="_blank">Jesse Black</a></h4>
+                        <p>The gifted photographer who shot and edited this site's background image! Go check him out on Instagram!</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                        </div>
+                        <br />
+                        <h4><a href="">CJ Discavage</a></h4>
+                        <p>Centriq Classmate</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                        </div>
+                        <br />
+                        <h4><a href="">Colton Weeks</a></h4>
+                        <p>Centriq Classmate</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                    <div class="icon-box">
+                        <div>
+                            <!-- Get the right image here -->
+                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                        </div>
+                        <br />
+                        <h4><a href="">Courtney Crespo</a></h4>
+                        <p>Centriq Classmate</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>My Independent Projects</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-MVC">MVC Applications</li>
+                        <li data-filter=".filter-FEO">Front-End Only</li>
+                        <li data-filter=".filter-ConsoleApp">Console Applications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-FEO">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/Armor_Pauldron.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Adventuring Ace Academy</h4>
+                            <p>Mock website for a school built from scratch using only HTML5 and CSS3</p>
+                            <div class="portfolio-links">
+                                <!-- UNCOMMENT WHEN PORTFOLIO DETAILS IS UP<a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ConsoleApp">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/SpookyMoon.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>The Dead Of The Night</h4>
+                            <p>A choice-based, open world, narrative driven C# console application wherein the player is pitted against a formidable vampire. One of my favorite projects!</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ConsoleApp">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/Atm.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>ATM Interface</h4>
+                            <p>A mock-up ATM interface built with C# with the intent of exploring branching an looping logic.</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ConsoleApp">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/AskAPirate.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ask A Pirate!</h4>
+                            <p>A twist on the Magic 8 Ball where the user asks a yes or no question and a random response is generated. Built as a console app in C#</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-MVC">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/VendingMachine.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>WIP Vending Machine</h4>
+                            <p>Vending machine is built to simulate an online store front with a shopping cart. Administrators have the ability to manage product, category, and vendor data</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-MVC">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/ComingSoon.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>WIP Scheduling Administration Tool (S.A.T.)</h4>
+                            <p>WILL CREATE A secure application for managing product data. The application is built to simulate an online class scheduling system. Administrators have the ability to manage students, courses, scheduled classes, and enrollments</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-MVC">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/ComingSoon.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>WIP CENTRIQ FINAL PROJECT</h4>
+                            <p>Will CREATE a secure data-driven ASP.NET MVC application from design through deployment</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-FEO">
+                    <div class="portfolio-wrap">
+                        <img src="~/Content/assets/img/portfolio/Clock.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>CSS + JS Clock</h4>
+                            <p>A functioning clock built using CSS and vanilla JS</p>
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Let's Get in Touch!</p>
+            </div>
+
+            <div class="row mt-2">
+
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-map"></i>
+                        <h3>Located In</h3>
+                        <p>Kansas City, Missouri</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-share-alt"></i>
+                        <h3>Social Profiles</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/sawyer-gobin/" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a>
+                            <a href="https://github.com/sawyergobin" target="_blank" class="github"><i class="icofont-github"></i></a>
+                            <a href="https://twitter.com/GobinSawyer" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email Me</h3>
+                        <p>sawyergobin@outlook.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="info-box">
+                        <i class="bx bx-anchor"></i>
+                        <h3>Download My Resume</h3>
+                        <p>
+                            <a href="~/Content/assets/downloadable/SawyerGobinResumeIT.pdf">MyResume(PDF)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!-- Class php-email-form is only for the styling-->
+            <!-- Form validation is custom written and can be checked out in customValidation.js -->
+            <form action="#" method="get" class="php-email-form" onsubmit="validateForm(event)">
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" id="tbName" name="name" class="form-control" placeholder="Your Name" />
+                        <span id="errorName" class="invalid"></span>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Your Email" />
+                        <span id="errorEmail" class="invalid"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                    <span id="errorSubject" class="invalid"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                    <span id="errorMessage" class="invalid"></span>
+                </div>
+                <div class="text-center"><button class="btn" type="submit">Send Message</button></div>
+            </form>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+    <span class="credits">
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    </span>
+
+    <!-- Vendor JS Files -->
+    <script src="~/Content/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/Content/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/Content/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/Content/assets/vendor/counterup/counterup.min.js"></script>
+    <script src="~/Content/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/Content/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/Content/assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/Content/assets/js/customValidation.js"></script>
+    <script src="~/Content/assets/js/main.js"></script>
     @RenderSection("scripts", required: false)
+
 </body>
+
 </html>
