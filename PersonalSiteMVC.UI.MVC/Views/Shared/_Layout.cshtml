@@ -8,11 +8,14 @@
     <title>Sawyer Gobin | Personal Site</title>
     <meta content="Sawyer Gobin's Personal Portfolio Site. I'm a Kansas City based web developer trained in the .Net Stack, MVC, and ReactJS" name="description">
     <meta content="Web Developer, Kansas City, Sawyer Gobin, front-end, back-end, middle-tier, freelance, Programmer, Coding, .Net, MVC, ReactJS, Resume, Portfolio" name="keywords">
-    <meta name="author" content="Sawyer D. Gobin"
+    <meta name="author" content="Sawyer D. Gobin" />
 
     <!-- Favicons -->
     <link href="~/Content/assets/img/favicon.png" rel="icon">
     <link href="~/Content/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!--Access to the ajax library for AJAX contact form-->
+    <link href="" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -108,7 +111,7 @@
                                 <li>Code Review</li>
                                 <li>Agile/Scrum Methodology</li>
                             </ul>
-                            <br/>
+                            <br />
                             <strong>Full Details in my <a href="~/Content/assets/downloadable/SawyerGobinResumeIT.pdf">Resume PDF</a> or <a href="~/Content/assets/downloadable/SawyerGobinResumeIT.pdf">LinkedIn</a>.</strong>
                         </p>
                     </div>
@@ -233,28 +236,28 @@
                 </div>
 
                 @*These guys can be uncommented when their sites are up
-                    
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
-                    <div class="icon-box">
-                        <div>
-                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
-                        </div>
-                        <br />
-                        <h4><a href="">CJ Discavage</a></h4>
-                        <p>Centriq Classmate</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
-                    <div class="icon-box">
-                        <div>
-                            <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                        <div class="icon-box">
+                            <div>
+                                <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                            </div>
+                            <br />
+                            <h4><a href="">CJ Discavage</a></h4>
+                            <p>Centriq Classmate</p>
                         </div>
-                        <br />
-                        <h4><a href="">Colton Weeks</a></h4>
-                        <p>Centriq Classmate</p>
                     </div>
-                </div>*@
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-sm-center">
+                        <div class="icon-box">
+                            <div>
+                                <img class="img-thumbnail" src="~/Content/assets/img/linksImages/CentriqLogo.png" />
+                            </div>
+                            <br />
+                            <h4><a href="">Colton Weeks</a></h4>
+                            <p>Centriq Classmate</p>
+                        </div>
+                    </div>*@
             </div>
 
         </div>
@@ -289,7 +292,7 @@
                             <p>Mock website for a school built from scratch using only HTML5 and CSS3</p>
                             <div class="portfolio-links">
                                 <a href="https://github.com/sawyergobin/FED1StudioProject" target="_blank" title="This Project's GitHub Page"><i class="bx bx-link"></i></a>
-                                 @*UNCOMMENT WHEN PORTFOLIO DETAILS IS UP<a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>*@
+                                @*UNCOMMENT WHEN PORTFOLIO DETAILS IS UP<a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>*@
                             </div>
                         </div>
                     </div>
@@ -446,29 +449,38 @@
                 </div>
             </div>
             <br />
-            <!-- Class php-email-form is only for the styling-->
-            <!-- Form validation is custom written and can be checked out in customValidation.js -->
-            <form action="#" method="get" class="php-email-form" onsubmit="validateForm(event)">
-                <div class="form-row">
-                    <div class="col-md-6 form-group">
-                        <input type="text" id="tbName" name="name" class="form-control" placeholder="Your Name" />
-                        <span id="errorName" class="invalid"></span>
+            @*Old Contact form
+                    <!-- Class php-email-form is only for the styling-->
+                <!-- Form validation is custom written and can be checked out in customValidation.js -->
+                <form action="#" method="get" class="php-email-form" onsubmit="validateForm(event)">
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Your Name" />
+                            <span id="errorName" class="invalid"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Your Email" />
+                            <span id="errorEmail" class="invalid"></span>
+                        </div>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Your Email" />
-                        <span id="errorEmail" class="invalid"></span>
+                    <div class="form-group">
+                        <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                        <span id="errorSubject" class="invalid"></span>
                     </div>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
-                    <span id="errorSubject" class="invalid"></span>
-                </div>
-                <div class="form-group">
-                    <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
-                    <span id="errorMessage" class="invalid"></span>
-                </div>
-                <div class="text-center"><button class="btn " type="submit">Message Sending Under Construction (Check Back Soon!)</button></div>
-            </form>
+                    <div class="form-group">
+                        <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                        <span id="errorMessage" class="invalid"></span>
+                    </div>
+                    <div class="text-center"><button class="btn " type="submit">Message Sending Under Construction (Check Back Soon!)</button></div>
+                </form>*@
+
+            @* ++++AJAX CONTACT FORM++++ *@
+            <div id="contactForm">
+                @Html.Partial("ContactAjax", new PersonalSiteMVC.UI.MVC.Models.ContactViewModel())
+            </div>
+            <div id="contactConfirm">
+                @Html.Partial("EmailConfirm", new PersonalSiteMVC.UI.MVC.Models.ContactViewModel())
+            </div>
 
         </div>
     </section><!-- End Contact Section -->
@@ -491,7 +503,29 @@
     <!-- Template Main JS File -->
     <script src="~/Content/assets/js/customValidation.js"></script>
     <script src="~/Content/assets/js/main.js"></script>
+
+    <!--AJAX for contact form-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+
     @RenderSection("scripts", required: false)
+
+    <script>
+        $("#ContactCreateForm").submit(function (e) {
+            var formData = $(this).serializeArray();
+            e.preventDefault();
+            $.ajax({
+                url: '@Url.Action("ContactAjax", "Home")',
+                type: 'POST',
+                data: formData,
+                datatype: 'json',
+                success: function (data) {
+                    $("#contactForm").hide();
+
+                    $('#contactConfirm').show();
+                }
+            });
+        });
+    </script>
 
 </body>
 

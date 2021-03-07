@@ -1196,3 +1196,10 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+
+/*Hiding the ajax contact confirm until it is triggered with JQuery*/
+#contactConfirm{
+    display:none;
+
+}
