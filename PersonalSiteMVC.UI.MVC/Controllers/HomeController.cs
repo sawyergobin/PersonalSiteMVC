@@ -17,8 +17,15 @@ namespace PersonalSiteMVC.UI.MVC.Controllers
         }
 
         [ValidateAntiForgeryToken]
+        [HttpPost]
         public JsonResult ContactAjax(ContactViewModel cvm)
         {
+            //if (ModelState.IsValid)
+            //{
+
+            //    return Json(cvm);
+            //}
+
             //This is the body of the message sent
             string body = $"{cvm.Name} has sent you the following message: <br />" +
                 $"{cvm.Message} <br /> " +
