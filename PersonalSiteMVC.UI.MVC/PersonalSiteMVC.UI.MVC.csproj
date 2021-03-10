@@ -133,6 +133,7 @@
     <Content Include="Content\assets\img\favicon.png" />
     <Content Include="Content\assets\img\linksImages\CentriqLogo.png" />
     <Content Include="Content\assets\img\linksImages\CourtneyLink.jpg" />
+    <Content Include="Content\assets\img\linksImages\CustomCentriqLogo.jpg" />
     <Content Include="Content\assets\img\linksImages\JesseLink.jpg" />
     <Content Include="Content\assets\img\linksImages\JordanLink.jpg" />
     <Content Include="Content\assets\img\linksImages\SarahLink.jpg" />
