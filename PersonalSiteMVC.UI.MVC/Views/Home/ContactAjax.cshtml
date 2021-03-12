@@ -2,11 +2,11 @@
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/jqueryval")
 
-@using (Html.BeginForm("","",FormMethod.Post, new { id = "ContactCreateForm" }))
+@using (Html.BeginForm("","",FormMethod.Post, new { id = "ContactCreateForm", @class = "email-form"}))
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal" style="width:85%;margin:auto;">
+    <div class="form-horizontal" @*style="width:85%;margin:auto;"*@>
         <h4>Contact Me Directly:</h4>
         <br/>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
