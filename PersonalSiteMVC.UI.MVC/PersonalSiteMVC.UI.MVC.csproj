@@ -143,6 +143,7 @@
     <Content Include="Content\assets\img\portfolio\AskAPirate.jpg" />
     <Content Include="Content\assets\img\portfolio\Atm.jpg" />
     <Content Include="Content\assets\img\portfolio\Clock.jpg" />
+    <Content Include="Content\assets\img\portfolio\Coding_Challenges.jpg" />
     <Content Include="Content\assets\img\portfolio\ComingSoon.jpg" />
     <Content Include="Content\assets\img\portfolio\SpookyMoon.jpg" />
     <Content Include="Content\assets\img\portfolio\VendingMachine.jpg" />
